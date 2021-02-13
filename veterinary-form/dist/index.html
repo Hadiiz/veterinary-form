@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Veterinary Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<h1 id="title">Hadi's Veterinary</h1>
+<p id="description">Please fill this form bellow if your pet is feeling ill ❤️</p>
+<form id="survey-form">
+  <!--  ANIMAL NAME  -->
+  <div class="form-group">
+    <label for="name" id="name-label">Pet's Name</label>
+    <input type="Text" class="form-control" id="name" required placeholder="Enter The Animal's Name">
+  </div>
+  <!--  EMAIL  -->
+  <div class="form-group">
+    <label for="email" id="email-label">Email</label>
+    <input type="email" class="form-control" id="email" required placeholder="Enter Your Email">
+  </div>
+  <!--  Animal Age  -->
+  <div class="form-group">
+    <label for="age" id="number-label">Pet's Age</label>
+    <input type="number" class="form-control" id="number" placeholder="Enter The Animal's Age" min=0 max=99>
+  </div>
+  <!--  Animal Type  -->
+  <div class="form-group">
+    <label>Pet's Type</label>
+    <select id="dropdown" name="animal-type" required>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="bird">Bird</option>
+      <option value="reptile">Reptile</option>
+    </select>
+  </div>
+  <!--  Sickness  -->
+  <div class="form-group">
+    <label>Sickness Type?</label>
+    <label><input type="checkbox" name="vomit" value="yes" /> Vomit</label>
+    <label><input type="checkbox" name="fever" value="yes" /> Fever</label>
+    <label><input type="checkbox" name="fleas" value="yes" /> Fleas</label>
+    <label><input type="checkbox" name="other" value="yes" /> Other</label>
+  </div>
+  <!--  MOOD  -->
+  <div class="form-group">
+    <label>What is your pet's current mood?</label>
+    <label><input type="radio" name="mood" value="happy"> 😊</label>
+    <label><input type="radio" name="mood" value="neutral"> 😐</label>
+    <label><input type="radio" name="mood" value="sad"> 😞</label>
+    <label><input type="radio" name="mood" value="angry"> 😠</label>
+  </div>
+  <!--  Comment  -->
+  <div class="form-group">
+    <label>Do you have any additional comments?</label>
+    <textarea id="comments" name="comment" placeholder="Enter your comments here..."></textarea>
+  </div>
+
+  <!-- Submit Button  -->
+  <div class="form-group">
+    <button type="submit" id="submit">Submit</button>
+  </div>
+</form>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
